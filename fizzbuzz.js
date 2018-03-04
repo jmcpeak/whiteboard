@@ -10,9 +10,11 @@ for (let i = MIN; i <= MAX; i++) {
     let output = EMPTY;
 
     for (let value in VALUES)
-        if (i % value === 0) output += VALUES[value];
+        if (i % value === 0)
+            output += VALUES[value];
 
-    if (output === EMPTY) output = i;
+    if (output === EMPTY)
+        output = i;
 
     console.log(output);
 }
