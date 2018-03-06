@@ -15,16 +15,16 @@ const
         {
             let start = performance.now(),
                 calculate = () => {
-                    let number = 1,
-                        secondLast = 0,
+                    let secondLast = 0,
                         last = 1,
-                        current = 2;
+                        number = 1,
+                        currentPos = 2;
 
-                    while (current <= position) {
+                    while (currentPos <= position) {
                         number = secondLast + last;
                         secondLast = last;
                         last = number;
-                        current++;
+                        currentPos++;
                     }
 
                     return number;
